@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Jacq;
+    src: url(../font/Jacquard12-Regular.ttf);
+}
+
+@font-face {
+    font-family: Radio400;
+    src: url(../font/RadioCanadaBig-Regular.ttf);
+    font-weight: 400;
+}@font-face {
+    font-family: Radio700;
+    src: url(../font/RadioCanadaBig-Bold.ttf);
+    font-weight: 700;
+}@font-face {
+    font-family: Radio600;
+    src: url(../font/RadioCanadaBig-SemiBold.ttf);
+    font-weight: 600;
+}

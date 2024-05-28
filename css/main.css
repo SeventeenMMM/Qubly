@@ -1,0 +1,458 @@
+@import url(font.css);
+
+:root {
+  --primary-purple: #722ed1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  font-family: Radio400;
+  font-weight: 400;
+}
+
+.header {
+  background: linear-gradient(175deg, #f9f0ff 0%, #e2f1ff 100%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__nav {
+  padding-top: 24px;
+}
+
+.header__nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid var(--primary-purple);
+  border-radius: 23px;
+  padding: 12px 24px;
+  color: #722ed1;
+}
+
+.header__nav-about li > a {
+  font-family: Radio400;
+  font-weight: 400;
+  font-size: 17px;
+  color: black;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+h1 {
+  font-family: Jacq;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+  max-width: 425px;
+}
+
+.header__content {
+  padding-top: 200px;
+  margin-bottom: 150px;
+}
+
+.paragraph {
+  font-family: Jacq;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  opacity: 0.5;
+  max-width: 400px;
+}
+
+.left {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.content-links {
+  display: flex;
+  gap: 16px;
+}
+
+.content-links a:nth-child(1) {
+  color: white;
+  background: #722ed1;
+}
+
+.content-links a:nth-child(2) {
+  color: #722ed1;
+  background: white;
+  border: none;
+}
+
+.header__content .container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.right img {
+  width: 100%;
+}
+
+.burger {
+  font-size: 30px;
+  visibility: hidden;
+  display: none;
+}
+
+.burger,
+.header__nav.adapt {
+  display: none;
+  visibility: hidden;
+}
+
+.title {
+  border-radius: 20px;
+  padding: 8px 16px;
+  background: #f7f1ff;
+  color: #722ed1;
+  text-align: center;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.headline {
+  font-family: Jacq;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: #160637;
+}
+
+.why .paragraph {
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.card .paragraph {
+  font-size: 16px;
+  max-width: 250px;
+}
+
+.card .headline {
+  font-size: 22px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.launch {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  justify-content: center;
+}
+
+.launch img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.launch .title {
+  font-size: 16px;
+  width: 224px;
+  height: 40px;
+  text-align: center;
+  gap: 10px;
+}
+
+.launch__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.launch__right .headline {
+  font-size: 42px;
+}
+
+.drive .right img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.drive {
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.drive .title {
+  width: 244px;
+  height: 40px;
+}
+
+.love {
+  margin-top: 180px;
+}
+
+.love .container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.love .headline {
+  font-size: 28px;
+  max-width: 800px;
+}
+
+.love .paragraph {
+  max-width: 120px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.love .paragraph::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px; /* Высота псевдоэлемента, можете изменить по своему усмотрению */
+  background-color: #722ed1; /* Цвет псевдоэлемента, можете изменить по своему усмотрению */
+  margin-top: 32px; /* Отступ сверху, чтобы создать расстояние между текстом и псевдоэлементом */
+  margin-bottom: 32px;
+}
+
+.love__sosa {
+  display: flex;
+  gap: 82px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.love__sosa img {
+  width: 100%;
+}
+
+.login {
+  margin-top: 220px;
+}
+
+.login .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login .left .headline {
+  font-size: 26px;
+  max-width: 400px;
+}
+
+.login .left .paragraph {
+  text-align: center;
+}
+
+.login .paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login .paragraph::before,
+.login .paragraph::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px; /* Вы можете изменить высоту */
+  background-color: #000; /* Вы можете изменить цвет */
+}
+
+.login .paragraph::before {
+  margin-right: 10px; /* Расстояние между текстом и линией слева */
+}
+
+.login .paragraph::after {
+  margin-left: 10px; /* Расстояние между текстом и линией справа */
+}
+
+.login .left {
+  text-align: center; /* Центрирование текста */
+}
+
+.login-img {
+  display: flex;
+  margin-top: 20px; /* Отступ сверху для отделения от заголовка и текста */
+}
+
+.login-img .inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Две колонки с автошириной */
+  gap: 20px; /* Расстояние между колонками и строками */
+}
+
+.login-img img {
+  max-width: 100px; /* Уменьшение максимальной ширины изображений */
+  height: auto; /* Высота изображений изменяется пропорционально ширине */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.login .right .btn {
+  padding: 12px 98px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background: #722ed1;
+  color: white;
+  border-radius: 0;
+  border: none;
+}
+
+input {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 16px;
+  width: 348px;
+  height: 48px;
+}
+
+form .paragraph {
+  font-size: 24px;
+}
+
+form {
+  border-radius: 8px;
+  padding: 32px 40px;
+  width: 428px;
+  height: 494px;
+  box-shadow: 4px 4px 12px 0 rgba(137, 137, 162, 0.12);
+  background: rgb(248, 236, 251);
+  gap: 10px;
+}
+
+.google {
+  width: 200px;
+  height: 50px;
+  background: rgb(0, 153, 255);
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google i {
+  font-size: 50px;
+}
+
+.right {
+  text-align: center; /* Центрирование формы */
+}
+
+.logg {
+  font-size: 24px;
+  font-family: Jacq;
+}
+
+.footer {
+  background: #fbfcff;
+  padding: 58px 0px 98px 0px;
+  margin-top: 120px;
+}
+
+.footer .container {
+  display: flex;
+  gap: 40px;
+}
+
+.lorem .paragraph {
+  max-width: 209px;
+}
+
+.lorem img {
+  width: 100%;
+  max-width: 50px;
+}
+
+.lorem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social i {
+  font-size: 24px;
+  color: rgb(136, 0, 255);
+}
+
+.footer .headline {
+  text-align: left;
+}
+
+.footer__nav-list li a {
+  font-size: 22px;
+  color: #160637;
+  font-family: Jacq;
+}
+.footer input {
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 200px;
+}
+
+.footer .btn {
+  padding: 12px 83px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background: #722ed1;
+  color: white;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
